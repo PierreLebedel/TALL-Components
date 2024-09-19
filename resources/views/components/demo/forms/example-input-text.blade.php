@@ -1,1 +1,1 @@
-<x-input name="test" value="test" />
+<x-input name="example01" value="Simple text input" />

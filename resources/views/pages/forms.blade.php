@@ -13,6 +13,16 @@
 
             <x-demo.render-example example="forms/example-input-text" />
 
+            <x-demo.render-example example="forms/example-input-text-disabled" />
+
+            <x-demo.render-source component="label" />
+
+            <x-demo.render-example example="forms/example-input-text-label" />
+
+            <x-demo.render-source component="input-error" />
+
+            <x-demo.render-example example="forms/example-input-text-error" />
+
             <x-demo.render-source component="input-number" />
 
             <x-demo.render-example example="forms/example-input-number-integer" />

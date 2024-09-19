@@ -15,7 +15,7 @@
         <div class="px-4 sm:px-0">
             @include('components/demo/'.$example)
         </div>
-        <div>
+        <div class="rounded-md overflow-hidden">
             <x-demo.render-code language="blade">{{ $var }}</x-demo.render-code>
         </div>
     </div>

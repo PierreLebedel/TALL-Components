@@ -1,0 +1,1 @@
+<x-input name="example02" value="Disabled input" disabled />

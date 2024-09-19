@@ -7,7 +7,7 @@
     ob_end_clean();
 @endphp
 
-<div x-data="{ isExpanded: false }" class="border rounded-md overflow-hidden mx-4 sm:mx-0">
+<div x-data="{ isExpanded: false }" class="rounded-md overflow-hidden mx-4 sm:mx-0 border border-gray-200 border-l-4 border-l-indigo-500">
     <button type="button" class="flex w-full items-center justify-between gap-6 bg-white p-4 rounded-top-md" @click="isExpanded = ! isExpanded">
         <div class="text-lg text-gray-500">
             components/<b class="text-gray-800">{{ $component }}.blade.php</b>

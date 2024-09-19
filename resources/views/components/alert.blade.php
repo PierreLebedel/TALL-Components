@@ -12,7 +12,7 @@ if(!in_array($type, ['info', 'success', 'warning', 'danger'])){
     x-transition:leave-end="opacity-0">
 
     <div @class([
-        'relative flex w-full shadow-md items-center gap-3 py-3 px-4 pt-2.5 overflow-hidden border-t-4',
+        'relative flex w-full shadow-md rounded-md items-center gap-3 py-3 px-4 pt-2.5 overflow-hidden border-l-4',
         'border-indigo-300 bg-indigo-100 text-indigo-500' => $type=='info',
         'border-emerald-300 bg-emerald-100 text-emerald-500' => $type=='success',
         'border-amber-300 bg-amber-100 text-amber-500' => $type=='warning',
