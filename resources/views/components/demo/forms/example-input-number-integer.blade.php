@@ -1,0 +1,1 @@
+<x-input-number min="-2" max="3" step="1" />
