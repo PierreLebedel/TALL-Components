@@ -6,11 +6,24 @@
     min: @js($min),
     max: @js($max),
     disabled: @js($disabled),
+    validate(){
+      {{-- if(this.value){
+        if(this.min && this.value<=this.min){
+            this.value = this.min;
+            return;
+        }
+            if(this.max && this.value>=this.max){
+            this.value = this.max;
+            return;
+        }
+      } --}}
+    },
     decrement(){
       if(this.disabled){
             return;
         }
         if(this.min && this.value<=this.min){
+            this.value = this.min;
             return;
         }
         this.value -= parseFloat(this.step);
@@ -21,6 +34,7 @@
             return;
         }
         if(this.max && this.value>=this.max){
+            this.value = this.max;
             return;
         }
         this.value += parseFloat(this.step);
@@ -32,7 +46,7 @@
         &minus;
       </button>
 
-      <x-input type="number" x-model="value" x-bind:step="step" {{ $attributes->merge(['class' => 'flex-grow mx-px rounded-none border-transparent text-center [-moz-appearance:_textfield] [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none', 'disabled'=>$disabled]) }} />
+      <x-input type="number" x-model="value" x-bind:step="step" x-on:blur="validate()" {{ $attributes->merge(['class' => 'flex-grow mx-px rounded-none border-transparent text-center [-moz-appearance:_textfield] [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none', 'disabled'=>$disabled]) }} />
   
       <button type="button" class="w-12 rounded-r-md border-0 active:border active:border-indigo-500 active:outline-indigo-500 active:outline active:outline-1 active:outline-indigo-500" x-on:click="increment()">
         &plus;

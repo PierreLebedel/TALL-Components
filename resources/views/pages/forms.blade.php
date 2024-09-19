@@ -9,7 +9,11 @@
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
 
-            <x-demo.render-example example="forms/example-01" />
+            <x-demo.render-source component="input" />
+
+            <x-demo.render-example example="forms/example-input-text" />
+
+            <x-demo.render-source component="input-number" />
 
             <x-demo.render-example example="forms/example-input-number-integer" />
 

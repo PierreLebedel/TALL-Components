@@ -16,7 +16,7 @@
             @include('components/demo/'.$example)
         </div>
         <div>
-            <pre><code class="language-blade">{{ $var }}</code></pre>
+            <x-demo.render-code language="blade">{{ $var }}</x-demo.render-code>
         </div>
     </div>
 
