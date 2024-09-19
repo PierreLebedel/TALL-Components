@@ -20,3 +20,5 @@ yarn-error.log
 /.vscode
 /.zed
 Envoy.blade.php
+composer.lock
+package-lock.json
