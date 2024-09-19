@@ -13,6 +13,8 @@
 
             <x-demo.render-example example="forms/example-input-text" />
 
+            <x-demo.render-example example="forms/example-input-group" />
+
             <x-demo.render-example example="forms/example-input-text-disabled" />
 
             <x-demo.render-source component="label" />
