@@ -11,6 +11,8 @@
 
             <x-demo.render-source component="button" />
 
+            <x-demo.render-source component="link" />
+
             <x-demo.render-example example="buttons/example-button" />
 
             <x-demo.render-source component="button-primary" />
@@ -20,7 +22,7 @@
             <x-demo.render-source component="button-danger" />
 
             <x-demo.render-example example="buttons/example-button-danger" />
-            
+
         </div>
     </div>
 
